@@ -1,7 +1,10 @@
-
+import img from '../img/github.png';
+import {Container} from './styles'
 function App() {
   return (
-   <p>oi</p>
+    <Container>
+   <img src={img} alt="gitLogo" width={72} height={72}/>
+    </Container>
   );
 }
 
