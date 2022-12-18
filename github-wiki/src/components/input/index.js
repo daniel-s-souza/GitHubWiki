@@ -1,12 +1,11 @@
-import React from 'react'
+import StyledInput from "./styles"
 
-import{InputContainer}from './styles';
-
-export default function Input() {
-  return (
-    <InputContainer>
-      <input />
-    </InputContainer>
-  )
+const Input = ({value, onChange}) => {
+    return (
+        <StyledInput>
+            <input value={value} onChange={onChange}/>
+        </StyledInput>
+    )
 }
 
+export default Input
